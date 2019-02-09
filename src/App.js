@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Header from './Header/Header';
 import Home from './Home/Home';
+import Footer from './Footer/Footer';
 import axios from 'axios';
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import Container from 'react-bootstrap/Container';
+import * as homeresponse from './homeResponse';
+import * as eventresponse from './meetupResponse';
 
 const MEETUPS_URL = "https://933y46jk97.execute-api.us-east-1.amazonaws.com/Stage-1/events";
 const HOME_URL = "https://933y46jk97.execute-api.us-east-1.amazonaws.com/Stage-1/home";
@@ -12,20 +14,23 @@ class App extends Component {
   state = {homeData: {}, meetupsData: {}};
 
   async componentDidMount() {
-    const response = await axios.get(HOME_URL);
+    //const home_response = await axios.get(HOME_URL);
+    //const meetups_response = await axios.get(MEETUPS_URL);
 
-    this.setState({homeData: JSON.parse(response.data.body)});
+    this.setState({homeData: homeresponse.data});
+    this.setState({meetupsData: eventresponse.data});
   }
 
   render() {
     return(
       <div>
         <Header headerData={this.state.homeData.navbar} />
-        <Container>
+        <>
         <Router>
-          <Route exact path="/" render={() => <Home data={this.state.homeData}/>}/>
+          <Route exact path="/" render={() => <Home homeData={this.state.homeData} meetupsData={this.state.meetupsData}/>}/>
         </Router>
-        </Container>
+        </>
+        <Footer footerData={this.state.homeData.footer} />
       </div>
     );
   }
