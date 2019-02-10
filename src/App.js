@@ -3,6 +3,7 @@ import Header from './Header/Header';
 import Home from './Home/Home';
 import Footer from './Footer/Footer';
 import PastEvents from './PastEvents/PastEvents'
+import About from './About/About';
 import axios from 'axios';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import * as homeresponse from './homeResponse';
@@ -31,6 +32,7 @@ class App extends Component {
           <div>
           <Route exact path="/" render={() => <Home homeData={this.state.homeData} meetupsData={this.state.meetupsData}/>}/>
           <Route path="/pastevents" render={() => <PastEvents eventsData={this.state.meetupsData}/>}/>
+          <Route path="/about" render={() => <About/>}/>
           </div>
         </Router>
         </>
