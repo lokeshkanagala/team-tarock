@@ -7,6 +7,7 @@ const HomePageTemplate = ({homeData, upcomingMeetup}) => {
   if (!homeData || !homeData.home) {
     return <></>;
   }
+  const mapUrl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAnGPiEpydXj18Glw90yONMDzp5XVEW-Ss&v=3.exp&libraries=geometry,drawing,places";
   const presenters = upcomingMeetup && upcomingMeetup.presenters;
   const latitude = upcomingMeetup && parseFloat(upcomingMeetup.location.latitude);
   const longitude = upcomingMeetup && parseFloat(upcomingMeetup.location.longitude);
@@ -69,7 +70,7 @@ const HomePageTemplate = ({homeData, upcomingMeetup}) => {
               <div className="upcomingMeetup-mapWrapper">
                 <Map
                   isMarkerShown
-                  googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnGPiEpydXj18Glw90yONMDzp5XVEW-Ss&v=3.exp&libraries=geometry,drawing,places"
+                  googleMapURL={mapUrl}
                   loadingElement={<div style={{ height: `100%` }} />}
                   containerElement={<div style={{ height: `100%` }} />}
                   mapElement={<div style={{ height: `100%` }} />}

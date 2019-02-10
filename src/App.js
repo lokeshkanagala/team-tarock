@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './Header/Header';
 import Home from './Home/Home';
 import Footer from './Footer/Footer';
+import PastEvents from './PastEvents/PastEvents'
 import axios from 'axios';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import * as homeresponse from './homeResponse';
@@ -27,7 +28,10 @@ class App extends Component {
         <Header headerData={this.state.homeData.navbar} />
         <>
         <Router>
+          <div>
           <Route exact path="/" render={() => <Home homeData={this.state.homeData} meetupsData={this.state.meetupsData}/>}/>
+          <Route path="/pastevents" render={() => <PastEvents eventsData={this.state.meetupsData}/>}/>
+          </div>
         </Router>
         </>
         <Footer footerData={this.state.homeData.footer} />
