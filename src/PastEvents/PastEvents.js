@@ -1,9 +1,12 @@
 import React from "react";
 import EventTemplate from "./EventTemplate";
 import moment from "moment";
+import Slider from "./Slider";
 
 export const PastEventsTemplate = ({events}) => {
   return (
+    <>
+    <Slider/>
     <article className="pastMeetups">
       <div className="container  pastMeetups-container">
         <h1 className="pastMeetups-title">{'Previous Events'}</h1>
@@ -17,6 +20,7 @@ export const PastEventsTemplate = ({events}) => {
           ))}
       </div>
     </article>
+    </>
   );
 };
 

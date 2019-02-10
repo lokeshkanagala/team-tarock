@@ -21,11 +21,6 @@ class EventTemplate extends Component {
           </p>
         </div>
         <div className="meetup-presenters">
-            <img
-              className="meetup-presenterImage"
-              src={this.props.event.presenters[0].headshot}
-              alt={'presenterHeadShotImage'}
-            />
             <span className="meetup-presenterText">{this.props.event.presenters[0].text}</span>
         </div>
       </section>
