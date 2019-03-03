@@ -1,5 +1,6 @@
 import React from "react";
 import moment from "moment";
+import headerImageNTR from "../images/headerImageNTR.jpg";
 import Map from "./Map";
 import './Home.scss';
 
@@ -15,7 +16,7 @@ const HomePageTemplate = ({homeData, upcomingMeetup}) => {
     <>
         <section className="header">
         <div className="header-container  container">
-          <img className="header-image" src={'https://s3.amazonaws.com/team-tarak-trust/ntrjr.jpg'} style={{borderRadius: '50%'}}/>
+          <img className="header-image" src={headerImageNTR} style={{borderRadius: '50%'}}/>
           <h3 className="header-tagline">
           <div>
             <span className="header-taglinePart">{homeData.home.line1}</span>
@@ -87,7 +88,7 @@ const HomePageTemplate = ({homeData, upcomingMeetup}) => {
       </section>
       <section className="ctaBlock">
         <a
-          href="/about"
+          href="/pastevents"
           className="ctaBlock-pattern  ctaBlock-pattern--first"
         >
           <div className="ctaBlock-cta">
@@ -114,12 +115,9 @@ class Home extends React.Component {
   render() {
     const { homeData, meetupsData } = this.props;
     let upcomingMeetup = null;
-    console.log(meetupsData);
     if (meetupsData && meetupsData.meetups) {
       meetupsData && meetupsData.meetups.every(meetup => {
-        let date = moment(meetup.date, "DD/MM/YYYY")
-        if (moment().diff(date) > 0) {
-          upcomingMeetup = meetup;
+        if (meetup.next) {
           return true;
         } else {
           return false;

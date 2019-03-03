@@ -8,38 +8,34 @@ const data = {
 	},
 	'pastEventDescription': 'ఇంతకు ముందు జరిపిన ఈవెంట్స్ ని మీరు ఇక్కడ చూడవచ్చు. వీటిలో మీరు పాల్గొనలేదా? పేజీ కింద మీ వివరాలు తెలియజేయండి ..తదుపరి కార్యక్రమము చేసేటప్పుడు మీకు తెలియజేస్తాము.',
 	'footer': {
-		'logoImage': {
-			'url': 'https://s3.amazonaws.com/team-tarak-trust/logoImage.png',
-			'tagline': 'Your friendly fraternity of NTR fans.'
-		},
 		'socialLinks': [{
 			'linkUrl': 'https://twitter.com/TeamTarakTrust',
-			'image': 'https://s3.amazonaws.com/team-tarak-trust/twitter.svg',
+			'image': 'https://s3.ap-south-1.amazonaws.com/www.teamtaraktrust.com/store/twitter.svg',
 			'label': 'twitter.com'
 		},
 		{
 			'linkUrl': 'https://www.facebook.com/TeamTarakTrust/',
-			'image': 'https://s3.amazonaws.com/team-tarak-trust/facebook.svg',
+			'image': 'https://s3.ap-south-1.amazonaws.com/www.teamtaraktrust.com/store/facebook.svg',
 			'label': 'facebook.com'
 		},
 		{
-			'linkUrl': 'https://example.com',
-			'image': 'https://s3.amazonaws.com/team-tarak-trust/email.svg',
-			'label': 'email us'
+			'linkUrl': 'https://www.instagram.com/teamtaraktrust/',
+			'image': 'https://s3.ap-south-1.amazonaws.com/www.teamtaraktrust.com/store/instagram.svg',
+			'label': 'instagram.com'
 		}]
 	},
 	'navbar': {
 		'menuItems': [
 		{
-			'label': 'home',
+			'label': 'Home',
 			'linkUrl': '/'
 		},
 		{
-			'label': 'past events',
+			'label': 'Past Events',
 			'linkUrl': '/pastevents'
 		},
 		{
-			'label': 'about',
+			'label': 'About',
 			'linkUrl': '/about'
 		}
 		]

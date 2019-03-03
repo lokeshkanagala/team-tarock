@@ -32,8 +32,7 @@ const PastEvents = ({ eventsData }) => {
 
   // Find all the meetups that occured in the past
   let events = eventsData.meetups.filter(meetup => {
-    console.log(meetup.next);
-    return meetup.next === 'no';
+    return meetup.next === false;
   });
 
   return (

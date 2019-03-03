@@ -16,10 +16,11 @@ export const AboutTemplate = () => {
           <h1> About our team </h1>
           <p>
            Team Tarak is a friendly fraternity of NTR fans who are committed to make a difference. Our mission is to make a positive difference in the lives of the homeless, hungry, mentally ill and needy. Come Join Us. Keep an eye out for our next event and lets put a smile on some more faces together.
-           <h4 style={{padding: '15px'}}>
-           "आ त्मवत् मन्येत् जगत्"
+           <h4 style={{paddingTop: '35px'}}>
+           <span style={{backgroundColor: 'yellow'}}>"आ त्मवत् मन्येत् जगत्"</span>
            <br/>
-           "Consider the world like your own self."
+           <br/>
+           <span style={{backgroundColor: 'yellow'}}>"Consider the world like your own self."</span>
            </h4> 
           </p>
           </section>
