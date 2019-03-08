@@ -97,12 +97,12 @@ const HomePageTemplate = ({homeData, upcomingMeetup}) => {
           </div>
         </a>
         <a
-          href={'mailto:lokesh.kanagala@gmail.com'}
+          href={'mailto:teamtaraktrust@gmail.com'}
           className="ctaBlock-pattern  ctaBlock-pattern--second"
         >
           <div className="ctaBlock-cta">
             <span className="ctaBlock-ctaHeading">Come Join Us</span>
-            <p className="ctaBlock-ctaDescription">ఓబా..ఒక్కడివే సహాయం చేస్తే అది ఉపకారం..మనం అందరం కలిసి చేస్తే అది ఆ సమ్యస్యకి పరిష్కారం.</p>
+            <p className="ctaBlock-ctaDescription" style={{color: 'white'}}>ఓబా..ఒక్కడివే సహాయం చేస్తే అది ఉపకారం..మనం అందరం కలిసి చేస్తే అది ఆ సమ్యస్యకి పరిష్కారం.</p>
           </div>
         </a>
       </section>
