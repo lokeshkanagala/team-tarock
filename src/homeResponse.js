@@ -37,6 +37,10 @@ const data = {
 		{
 			'label': 'About',
 			'linkUrl': '/about'
+		},
+		{
+			'label': 'Donations',
+			'linkUrl': '/analytics'
 		}
 		]
 	},

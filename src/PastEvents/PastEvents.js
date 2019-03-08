@@ -1,6 +1,5 @@
 import React from "react";
 import EventTemplate from "./EventTemplate";
-import moment from "moment";
 import Slider from "./Slider";
 
 export const PastEventsTemplate = ({events}) => {

@@ -43,7 +43,7 @@ export const AboutTemplate = () => {
             <p>
               We are always available and transparent. Text us (+91-9010570537) anytime if you have a question. We welcome you with open arms and with extreme happiness.
             </p>
-            <a href="#">VIEW ALL FINANCIALS</a>
+            <a href="/analytics">VIEW ALL FINANCIALS</a>
           </div>
 
           <div className="four columns">

@@ -4,13 +4,13 @@ import Home from './Home/Home';
 import Footer from './Footer/Footer';
 import PastEvents from './PastEvents/PastEvents'
 import About from './About/About';
-import axios from 'axios';
+import Analytics from './Analytics/Analytics';
 import {BrowserRouter as Router, Route} from "react-router-dom";
 import * as homeresponse from './homeResponse';
 import * as eventresponse from './meetupResponse';
 
-const MEETUPS_URL = "https://933y46jk97.execute-api.us-east-1.amazonaws.com/Stage-1/events";
-const HOME_URL = "https://933y46jk97.execute-api.us-east-1.amazonaws.com/Stage-1/home";
+//const MEETUPS_URL = "https://933y46jk97.execute-api.us-east-1.amazonaws.com/Stage-1/events";
+//const HOME_URL = "https://933y46jk97.execute-api.us-east-1.amazonaws.com/Stage-1/home";
 
 class App extends Component {
   state = {homeData: {}, meetupsData: {}};
@@ -33,6 +33,7 @@ class App extends Component {
           <Route exact path="/" render={() => <Home homeData={this.state.homeData} meetupsData={this.state.meetupsData}/>}/>
           <Route path="/pastevents" render={() => <PastEvents eventsData={this.state.meetupsData}/>}/>
           <Route path="/about" render={() => <About/>}/>
+          <Route path="/analytics" render={() => <Analytics/>}/>
           </div>
         </Router>
         </>
