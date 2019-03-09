@@ -39,7 +39,7 @@ const data = {
 			'linkUrl': '/about'
 		},
 		{
-			'label': 'Donations',
+			'label': 'More',
 			'linkUrl': '/analytics'
 		}
 		]

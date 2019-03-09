@@ -4,6 +4,8 @@ import ajay from "../images/ajay.jpeg";
 import gowtham from "../images/gowtham.jpeg";
 import prasanth from "../images/prasanth.jpeg";
 import vikram from "../images/vikram.jpeg";
+import karthik from "../images/karthik.jpeg";
+import kamlesh from "../images/kamlesh.jpeg";
 import headshot from "../images/headshot.jpeg";
 
 import "./OurTeam.css";
@@ -110,6 +112,34 @@ export const OurTeamTemplate = () => {
               <div className="team-content">
                 <div className="team-name"><h5>Lokesh</h5></div>
                 <div className="team-role">Developer - Technical Stack</div>
+                <div className="team-description"></div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2 col-sm-4 col-xs-6">
+            <div className="team">
+              <div className="team-image">
+                <a href="#">
+                  <img src={karthik} className="img-circle img-responsive"/>
+                </a>
+              </div>
+              <div className="team-content">
+                <div className="team-name"><h5>Karthik</h5></div>
+                <div className="team-role">Chennai</div>
+                <div className="team-description"></div>
+              </div>
+            </div>
+          </div>
+                    <div className="col-md-2 col-sm-4 col-xs-6">
+            <div className="team">
+              <div className="team-image">
+                <a href="#">
+                  <img src={kamlesh} className="img-circle img-responsive"/>
+                </a>
+              </div>
+              <div className="team-content">
+                <div className="team-name"><h5>Kamlesh</h5></div>
+                <div className="team-role">Hyderabad</div>
                 <div className="team-description"></div>
               </div>
             </div>

@@ -21,6 +21,7 @@ export const AnalyticsTemplate = ({}) => {
   return (
   <div className="wrapper">
     <div>{MainAnalytics()}</div>
+    <br/>
     <div className="twocolumnsana">{EventAnalytics()}</div>
     <div className="twocolumnsana">{DonationAnalytics()}</div>
     <br/>
@@ -61,10 +62,10 @@ Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pi
     return (
         <div style={{textAlign: 'center'}}>
         <p style={{margin: '20px'}}><b>This page is updated every 2 weeks (bi-weekly). Last updated on:</b></p>
-        <p> Here, you can view all the financial status of our trust. We are always an open book and if you have any queries or questions please feel free to contact us using any of our social media platforms or via our email: <b>teamtaraktrust@gmail.com</b>. The maximum amount of money a person can contribute is 100 INR or 50 USD. However if you are willing to contribute more, you can contribute in the form of direct supplies like food, clothing, etc..</p>
-        <div><b className="button">Received: 9000</b><img src={hand} style={{width:'50px'}}/></div>
-        <div style={{margin: '10px'}}><b className="button">Spent: 9000</b><img src={moneyBag} style={{width:'50px'}}/></div>
-        <div><b className="button">Smiles spread: 90</b><img src={smile} style={{width:'50px'}}/></div>
+        <p> Here, you can view all the financials of our trust. We are always an open book and if you have any queries please feel free to contact us using any of our social media platforms or via our email: <b>teamtaraktrust@gmail.com</b>. The maximum amount of money a person can contribute is 100 INR or 50 USD. However if you are willing to contribute more, you can contribute in the form of direct supplies like food, clothing, etc.</p>
+        <div><b className="button-ana">Received: 9000</b><img src={hand} style={{width:'50px'}}/></div>
+        <div style={{margin: '10px'}}><b className="button-ana">Spent: 9000</b><img src={moneyBag} style={{width:'50px'}}/></div>
+        <div><b className="button-ana">Smiles spread: 90</b><img src={smile} style={{width:'50px'}}/></div>
         </div>
       );
   };
