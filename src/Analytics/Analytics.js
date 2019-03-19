@@ -1,9 +1,8 @@
 import React from "react";
 import "./Analytics.css";
 import {Pie, Line} from 'react-chartjs-2';
-import hand from "../images/hand.svg";
-import moneyBag from "../images/moneyBag.svg";
-import smile from "../images/smile.svg";
+import RadarChart from './RadarChart';
+import DonutChart from './DonutChart';
 
 export const AnalyticsTemplate = ({}) => {
   const config = {
@@ -25,9 +24,11 @@ export const AnalyticsTemplate = ({}) => {
     <div className="twocolumnsana">{EventAnalytics()}</div>
     <div className="twocolumnsana">{DonationAnalytics()}</div>
     <br/>
-    <p style={{textAlign: 'center', fontSize: '8px'}}>Icons made by <a href="https://www.flaticon.com/authors/surang" title="surang">surang</a> from <a href="https://www.flaticon.com/"           title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"           title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"           title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"           title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
-Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/"           title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"           title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>
+    <br/>
+    <div className="twocolumnsana"><RadarChart/></div>
+    <div className="twocolumnsana"><DonutChart/></div>
+    <br/>
+    <br/>
   </div>
   );
 };
@@ -52,7 +53,7 @@ Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pi
     };
     return (
         <div style={{textAlign: 'center'}}>
-        <h4> Event-by-Event breakdown of expenses </h4>
+        <h5> Event-by-Event breakdown of expenses </h5>
         <Pie data={data} />
         </div>
       );
@@ -60,12 +61,9 @@ Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pi
 
   const MainAnalytics = () => {
     return (
-        <div style={{textAlign: 'center'}}>
-        <p style={{margin: '20px'}}><b>This page is updated every 2 weeks (bi-weekly). Last updated on:</b></p>
-        <p> Here, you can view all the financials of our trust. We are always an open book and if you have any queries please feel free to contact us using any of our social media platforms or via our email: <b>teamtaraktrust@gmail.com</b>. The maximum amount of money a person can contribute is 100 INR or 50 USD. However if you are willing to contribute more, you can contribute in the form of direct supplies like food, clothing, etc.</p>
-        <div><b className="button-ana">Received: 9000</b><img src={hand} style={{width:'50px'}}/></div>
-        <div style={{margin: '10px'}}><b className="button-ana">Spent: 9000</b><img src={moneyBag} style={{width:'50px'}}/></div>
-        <div><b className="button-ana">Smiles spread: 90</b><img src={smile} style={{width:'50px'}}/></div>
+        <div style={{align: 'center'}}>
+        <p style={{margin: '20px'}}><b>This page is updated every 2 weeks (bi-weekly). Last updated on: March 19, 2019</b></p>
+        <p style={{fontStyle: 'italic', fontWeight: '300', margin: '20px'}}> Here, you can view all the financials of our trust. We are always an open book and if you have any queries please feel free to contact us using any of our social media platforms or via our email: <b>teamtaraktrust@gmail.com</b>. The maximum amount of money a person can contribute is 100 INR or 50 USD. However if you are willing to contribute more, you can contribute in the form of direct supplies like food, clothing, etc.</p>
         </div>
       );
   };
@@ -99,7 +97,7 @@ Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pi
     };
     return (
         <div style={{textAlign: 'center'}}>
-        <h4> Month by Month breakdown of donations </h4>
+        <h5> Month by Month breakdown of donations </h5>
         <Line data={data}/>
         </div>
       );

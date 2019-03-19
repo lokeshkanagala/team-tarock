@@ -1,6 +1,27 @@
 const data = {
 	'meetups' : [
 		{
+			'title': 'Annai Fathima Child Care',
+			'next': false,
+			'date': '17/03/2019',
+			'formattedDate': '17 March, 2019',
+			'location': {
+				'name': 'Old Mahabalipuram Road, Karapakkam, Chennai, TN',
+				'mapsLink': 'https://www.google.com/maps/place/Annai+Fathima+Child+Welfare+Centre/@12.9108014,80.2269188,17z/data=!3m1!4b1!4m5!3m4!1s0x3a525c6326c415e3:0x4383484e9a84ec97!8m2!3d12.9108014!4d80.2291075',
+				'latitude':'12.9108014',
+				'longitude':'80.2269188'
+
+			},
+			'phoneNumber': '+(91)-6300465845',
+			'presenters': [
+			{
+				'text': 'We successfully completed our third event in Chennai. Distributed student supplies, pillows and also provided food for our cute little brothers and sisters.',
+				'headshot': 'https://s3.amazonaws.com/team-tarak-trust/meetups/meetup-1/picture1.png',
+				'presentationTitle': 'Annai Fathima Child Care'
+			}
+			]
+		},
+		{
 			'title': 'Sankalp',
 			'next': false,
 			'date': '24/02/2019',

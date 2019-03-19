@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.scss";
-import logoImage from "../images/logoImage.png";
+import logo from "../images/logo.jpeg";
 
 export const FooterTemplate = ({ footerData }) => {
   const { socialLinks } = footerData;
@@ -13,7 +13,7 @@ export const FooterTemplate = ({ footerData }) => {
             <h4 className="footer-aboutTitle">
               <img
                 className="footer-aboutTitleImg"
-                src={logoImage}
+                src={logo}
               />
             </h4>
             <p className="footer-aboutDescription" style={{color: 'white'}}>{"Your friendly fraternity of NTR fans."}</p>

@@ -44,6 +44,8 @@ export default class Slider extends React.Component {
           <div><img style={{height:"300px", width:"100%"}} src={"https://s3.ap-south-1.amazonaws.com/www.teamtaraktrust.com/store/meetup9.jpeg"}/></div>
           <div><img style={{height:"300px", width:"100%"}} src={"https://s3.ap-south-1.amazonaws.com/www.teamtaraktrust.com/store/meetup10.jpeg"}/></div>
           <div><img style={{height:"300px", width:"100%"}} src={"https://s3.ap-south-1.amazonaws.com/www.teamtaraktrust.com/store/meetup11.jpeg"}/></div>
+          <div><img style={{height:"300px", width:"100%"}} src={"https://s3.ap-south-1.amazonaws.com/www.teamtaraktrust.com/store/meetup12.jpeg"}/></div>
+          <div><img style={{height:"300px", width:"100%"}} src={"https://s3.ap-south-1.amazonaws.com/www.teamtaraktrust.com/store/meetup13.jpeg"}/></div>
         </Swiper>
       </div>
     )

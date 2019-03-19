@@ -1,17 +1,17 @@
 import React from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import TTT from '../images/TTT.png';
+import logo from '../images/logo.jpeg';
 
 export const HeaderTemplate = ({ menuItems }) => (
   <Navbar bg="dark" variant="dark">
     <Navbar.Brand href="/">
       <img
-        src={TTT}
-        width="30"
-        height="30"
+        src={logo}
+        width="31"
+        height="31"
         className="d-inline-block align-top"
-        alt="TTT"
+        alt="TTT-logo"
       />
     </Navbar.Brand>
     <Nav className="ml-auto" pullRight style={{float : 'right'}}>
