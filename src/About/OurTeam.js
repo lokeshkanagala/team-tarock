@@ -8,6 +8,8 @@ import karthik from "../images/karthik.jpeg";
 import kamlesh from "../images/kamlesh.jpeg";
 import srinivas from "../images/srinivas.png";
 import headshot from "../images/headshot.jpeg";
+import vamsi from "../images/vamsi.jpeg";
+import nabbi from "../images/nabbi.png";
 
 import "./OurTeam.css";
 
@@ -23,7 +25,8 @@ export const OurTeamTemplate = () => {
             <i className="fa fa-"></i>
         </div>
 
-        <div className="row" style={{align: 'center', justifyContent: 'center'}}>
+        <div className="row" style={{justifyContent: 'center'}}>
+
           <div className="col-md-2 col-md-offset-1 col-sm-4 col-xs-6 ">
             <div className="team">
               <div className="team-image">
@@ -32,11 +35,12 @@ export const OurTeamTemplate = () => {
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Manoj</h6></div>
+                <div className="team-name"><h5>Manoj</h5></div>
                 <div className="team-role">Australia</div>
               </div>
             </div>
           </div>
+
           <div className="col-md-2 col-md-offset-1 col-sm-4 col-xs-6 ">
             <div className="team">
               <div className="team-image">
@@ -45,11 +49,12 @@ export const OurTeamTemplate = () => {
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Ajay</h6></div>
-                <div className="team-role">TG, AP, KA, TN</div>
+                <div className="team-name"><h5>Ajay</h5></div>
+                <div className="team-role">TG,AP,KA,TN</div>
               </div>
             </div>
           </div>
+
           <div className="col-md-2 col-md-offset-1 col-sm-4 col-xs-6 ">
             <div className="team">
               <div className="team-image">
@@ -58,11 +63,12 @@ export const OurTeamTemplate = () => {
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Vikram</h6></div>
-                <div className="team-role">TG, AP, KA, TN</div>
+                <div className="team-name"><h5>Vikram</h5></div>
+                <div className="team-role">TG,AP,KA,TN</div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
       </section>
@@ -84,7 +90,7 @@ export const OurTeamTemplate = () => {
             <i className="fa fa-"></i>
         </div>
 
-        <div className="row" style={{align: 'center', justifyContent: 'center'}}>
+        <div className="row" style={{justifyContent: 'center'}}>
           <div className="col-md-2 col-sm-4 col-xs-6">
             <div className="team">
               <div className="team-image">
@@ -93,7 +99,7 @@ export const OurTeamTemplate = () => {
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Karthik</h6></div>
+                <div className="team-name"><h5>Karthik</h5></div>
                 <div className="team-role">Prakasam, Guntur, Kadapa, Ananthapur</div>
                 <div className="team-description"></div>
               </div>
@@ -107,7 +113,7 @@ export const OurTeamTemplate = () => {
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Gowtham</h6></div>
+                <div className="team-name"><h5>Gowtham</h5></div>
                 <div className="team-role">Nellore, Chittoor, Kurnool</div>
                 <div className="team-description"></div>
               </div>
@@ -121,7 +127,7 @@ export const OurTeamTemplate = () => {
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Prasanth</h6></div>
+                <div className="team-name"><h5>Prasanth</h5></div>
                 <div className="team-role">Hyderabad, Rangareddy</div>
                 <div className="team-description"></div>
               </div>
@@ -131,11 +137,11 @@ export const OurTeamTemplate = () => {
             <div className="team">
               <div className="team-image">
                 <a href="#">
-                  <img src={headshot} className="img-circle img-responsive"/>
+                  <img src={nabbi} className="img-circle img-responsive"/>
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Nabbi</h6></div>
+                <div className="team-name"><h5>Nabbi</h5></div>
                 <div className="team-role">Vizag, Krishna, WG, EG</div>
                 <div className="team-description"></div>
               </div>
@@ -149,7 +155,7 @@ export const OurTeamTemplate = () => {
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Ravi Teja</h6></div>
+                <div className="team-name"><h5>Ravi Teja</h5></div>
                 <div className="team-role">USA</div>
                 <div className="team-description"></div>
               </div>
@@ -163,8 +169,8 @@ export const OurTeamTemplate = () => {
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Srinivas</h6></div>
-                <div className="team-role">Hyderabad</div>
+                <div className="team-name"><h5>Srinivas</h5></div>
+                <div className="team-role">Chennai</div>
                 <div className="team-description"></div>
               </div>
             </div>
@@ -180,16 +186,16 @@ export const OurTeamTemplate = () => {
             <i className="fa fa-"></i>
         </div>
 
-        <div className="row" style={{align: 'center', justifyContent: 'center'}}>
+        <div className="row" style={{justifyContent: 'center'}}>
           <div className="col-md-2 col-md-offset-1 col-sm-4 col-xs-6 ">
             <div className="team">
               <div className="team-image">
                 <a href="#">
-                  <img src={headshot} className="img-circle img-responsive"/>
+                  <img src={vamsi} className="img-circle img-responsive"/>
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Vamsi</h6></div>
+                <div className="team-name"><h5>Vamsi</h5></div>
               </div>
             </div>
           </div>
@@ -201,7 +207,7 @@ export const OurTeamTemplate = () => {
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Lokesh</h6></div>
+                <div className="team-name"><h5>Lokesh</h5></div>
               </div>
             </div>
           </div>
