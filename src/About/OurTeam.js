@@ -17,11 +17,63 @@ export const OurTeamTemplate = () => {
     <>
       <section id="team" className="text-center section">
       <div className="container">
+        <h2><span className="highlight_secondary">Founders</span></h2>
+
+        <div className="hr invisible_hr">
+            <i className="fa fa-"></i>
+        </div>
+
+        <div className="row" style={{align: 'center', justifyContent: 'center'}}>
+          <div className="col-md-2 col-md-offset-1 col-sm-4 col-xs-6 ">
+            <div className="team">
+              <div className="team-image">
+                <a href="#">
+                  <img src={manoj} className="img-circle img-responsive"/>
+                </a>
+              </div>
+              <div className="team-content">
+                <div className="team-name"><h6>Manoj</h6></div>
+                <div className="team-role">Australia</div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2 col-md-offset-1 col-sm-4 col-xs-6 ">
+            <div className="team">
+              <div className="team-image">
+                <a href="#">
+                  <img src={ajay} className="img-circle img-responsive"/>
+                </a>
+              </div>
+              <div className="team-content">
+                <div className="team-name"><h6>Ajay</h6></div>
+                <div className="team-role">TG, AP, KA, TN</div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2 col-md-offset-1 col-sm-4 col-xs-6 ">
+            <div className="team">
+              <div className="team-image">
+                <a href="#">
+                  <img src={vikram} className="img-circle img-responsive"/>
+                </a>
+              </div>
+              <div className="team-content">
+                <div className="team-name"><h6>Vikram</h6></div>
+                <div className="team-role">TG, AP, KA, TN</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+      <br/>
+      <section id="team" className="text-center section">
+      <div className="container">
         <h2><span className="highlight_secondary">Our</span> Team</h2>
 
         <h5>
           Our people are our greatest asset and biggest differentiator.<br/>
-          Come Join Us. And you can also get your name and headshot here. 😍
+          Come Join Us. 😍
         </h5>
 
         <div className="hr big_size_hr invisible_hr">
@@ -32,45 +84,17 @@ export const OurTeamTemplate = () => {
             <i className="fa fa-"></i>
         </div>
 
-        <div className="row" style={{align: 'center'}}>
-          <div className="col-md-2 col-md-offset-1 col-sm-4 col-xs-6 ">
-            <div className="team">
-              <div className="team-image">
-                <a href="#">
-                  <img src={manoj} className="img-circle img-responsive"/>
-                </a>
-              </div>
-              <div className="team-content">
-                <div className="team-name"><h6>Manoj</h6></div>
-                <div className="team-role">Prakasam, West Godavari</div>
-                <div className="team-description"></div>
-              </div>
-            </div>
-          </div>
+        <div className="row" style={{align: 'center', justifyContent: 'center'}}>
           <div className="col-md-2 col-sm-4 col-xs-6">
             <div className="team">
               <div className="team-image">
                 <a href="#">
-                  <img src={vikram} className="img-circle img-responsive"/>
+                  <img src={karthik} className="img-circle img-responsive"/>
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Vikram</h6></div>
-                <div className="team-role">Krishna, Guntur</div>
-                <div className="team-description"></div>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-2 col-sm-4 col-xs-6">
-            <div className="team">
-              <div className="team-image">
-                <a href="#">
-                  <img src={ajay} className="img-circle img-responsive"/>
-                </a>
-              </div>
-              <div className="team-content">
-                <div className="team-name"><h6>Ajay</h6></div>
-                <div className="team-role">Kadapa, Anantapur</div>
+                <div className="team-name"><h6>Karthik</h6></div>
+                <div className="team-role">Prakasam, Guntur, Kadapa, Ananthapur</div>
                 <div className="team-description"></div>
               </div>
             </div>
@@ -84,7 +108,7 @@ export const OurTeamTemplate = () => {
               </div>
               <div className="team-content">
                 <div className="team-name"><h6>Gowtham</h6></div>
-                <div className="team-role">Nellore, Chittoor</div>
+                <div className="team-role">Nellore, Chittoor, Kurnool</div>
                 <div className="team-description"></div>
               </div>
             </div>
@@ -111,8 +135,8 @@ export const OurTeamTemplate = () => {
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Lokesh</h6></div>
-                <div className="team-role">Developer - Technical Stack</div>
+                <div className="team-name"><h6>Nabbi</h6></div>
+                <div className="team-role">Vizag, Krishna, WG, EG</div>
                 <div className="team-description"></div>
               </div>
             </div>
@@ -121,12 +145,12 @@ export const OurTeamTemplate = () => {
             <div className="team">
               <div className="team-image">
                 <a href="#">
-                  <img src={karthik} className="img-circle img-responsive"/>
+                  <img src={headshot} className="img-circle img-responsive"/>
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Karthik</h6></div>
-                <div className="team-role">Chennai</div>
+                <div className="team-name"><h6>Ravi Teja</h6></div>
+                <div className="team-role">USA</div>
                 <div className="team-description"></div>
               </div>
             </div>
@@ -145,28 +169,45 @@ export const OurTeamTemplate = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-2 col-sm-4 col-xs-6">
+        </div>
+      </div>
+    </section>
+    <section id="team" className="text-center section">
+      <div className="container">
+        <h2><span className="highlight_secondary">Social Media</span></h2>
+
+        <div className="hr invisible_hr">
+            <i className="fa fa-"></i>
+        </div>
+
+        <div className="row" style={{align: 'center', justifyContent: 'center'}}>
+          <div className="col-md-2 col-md-offset-1 col-sm-4 col-xs-6 ">
             <div className="team">
               <div className="team-image">
                 <a href="#">
-                  <img src={kamlesh} className="img-circle img-responsive"/>
+                  <img src={headshot} className="img-circle img-responsive"/>
                 </a>
               </div>
               <div className="team-content">
-                <div className="team-name"><h6>Kamlesh</h6></div>
-                <div className="team-role">Hyderabad</div>
-                <div className="team-description"></div>
+                <div className="team-name"><h6>Vamsi</h6></div>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-2 col-md-offset-1 col-sm-4 col-xs-6 ">
+            <div className="team">
+              <div className="team-image">
+                <a href="#">
+                  <img src={headshot} className="img-circle img-responsive"/>
+                </a>
+              </div>
+              <div className="team-content">
+                <div className="team-name"><h6>Lokesh</h6></div>
               </div>
             </div>
           </div>
         </div>
-
-        <div className="hr big_size_hr invisible_hr">
-            <i className="fa fa-"></i>
-        </div>
-
       </div>
-    </section>
+      </section>
     </>
   );
 };

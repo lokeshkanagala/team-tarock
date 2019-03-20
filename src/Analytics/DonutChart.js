@@ -3,12 +3,12 @@ import {Doughnut} from 'react-chartjs-2';
 
 const data = {
   labels: [
-    'Donations',
-    'Expenses',
-    'In Reserve'
+    'Help the Elderly',
+    'Sankalp',
+    'Annai-Fathima'
   ],
   datasets: [{
-    data: [30000, 20000, 10000],
+    data: [9000, 40000, 23000],
     backgroundColor: [
     '#B0E0E6',
     '#F08080',
@@ -26,7 +26,7 @@ const DonutChart = () => ({
   render() {
     return (
       <div style={{textAlign: 'center'}}>
-        <h5>Financials Breakdown</h5>
+        <h5>Expenses Breakdown</h5>
         <Doughnut data={data} />
       </div>
     );

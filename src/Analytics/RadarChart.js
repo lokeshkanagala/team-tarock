@@ -2,7 +2,7 @@ import React from 'react';
 import {Radar} from 'react-chartjs-2';
 
 const data = {
-  labels: ['Krishna', 'Guntur', 'Hyderabad-Rangareddy', 'Nellore-Chittoor', 'Kadapa-Ananthapur', 'Godavari', 'Chennai'],
+  labels: ['Krishna', 'Guntur', 'Prakasam', 'Hyderabad', 'Nellore-Chittoor', 'Kadapa-Ananthapur', 'Vizag', 'Godavari', 'Chennai'],
   datasets: [
     {
       label: 'Participants counts / Reach',
@@ -12,7 +12,7 @@ const data = {
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
       pointHoverBorderColor: 'rgba(255,99,132,1)',
-      data: [70, 80, 120, 55, 91, 45, 36]
+      data: [25, 20, 30, 30, 40, 20, 15, 40, 30]
     }
   ]
 };
@@ -20,7 +20,7 @@ const data = {
 const RadarChart = () => {
     return (
       <div style={{textAlign: 'center'}}>
-        <h5> Region based Reach/Participation count</h5>
+        <h5> Region Based Reach/Participation Count</h5>
         <Radar data={data} />
       </div>
     );

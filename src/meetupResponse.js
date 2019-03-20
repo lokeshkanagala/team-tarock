@@ -15,7 +15,7 @@ const data = {
 			'phoneNumber': '+(91)-6300465845',
 			'presenters': [
 			{
-				'text': 'We successfully completed our third event in Chennai. Distributed student supplies, pillows and also provided food for our cute little brothers and sisters.',
+				'text': 'Annai Fathima Child Welfare Centre is a government registered voluntary charitable organization taking care of 163 orphan children. With all your blessings we successfully completed our third charity event. It is our pleasure to help the kids living in the child care. We donated student supplies, pillows, every day items and also provided some good food. Thanks for you all support.',
 				'headshot': 'https://s3.amazonaws.com/team-tarak-trust/meetups/meetup-1/picture1.png',
 				'presentationTitle': 'Annai Fathima Child Care'
 			}

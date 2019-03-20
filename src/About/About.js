@@ -57,15 +57,16 @@ export const AboutTemplate = () => {
         </section>
       </article>
 
+      <br/>
       <hr className="hrStyle"/>
       <OurTeam/>
 
 
       <footer>
         <section className="firstSectionFooter">
-          <p>Team Tarak Trust: #####</p>
           <br/>
-          <a href="#">made with ❤️ : lkanagal</a> 
+          <a href="#">To Tarak With ❤️ : lkanagal</a> 
+          <br/>
         </section>
       </footer>
 
