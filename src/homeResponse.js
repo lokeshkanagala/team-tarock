@@ -10,17 +10,17 @@ const data = {
 	'footer': {
 		'socialLinks': [{
 			'linkUrl': 'https://twitter.com/TeamTarakTrust',
-			'image': 'https://s3.ap-south-1.amazonaws.com/www.teamtaraktrust.com/store/twitter.svg',
+			'image': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/twitter.svg',
 			'label': 'twitter.com'
 		},
 		{
 			'linkUrl': 'https://www.facebook.com/TeamTarakTrust/',
-			'image': 'https://s3.ap-south-1.amazonaws.com/www.teamtaraktrust.com/store/facebook.svg',
+			'image': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/facebook.svg',
 			'label': 'facebook.com'
 		},
 		{
 			'linkUrl': 'https://www.instagram.com/teamtaraktrust/',
-			'image': 'https://s3.ap-south-1.amazonaws.com/www.teamtaraktrust.com/store/instagram.svg',
+			'image': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/instagram.svg',
 			'label': 'instagram.com'
 		}]
 	},

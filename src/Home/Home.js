@@ -117,6 +117,9 @@ class Home extends React.Component {
     if (meetupsData && meetupsData.meetups) {
       meetupsData && meetupsData.meetups.every(meetup => {
         if (meetup.next) {
+          if (meetup.next === true) {
+            upcomingMeetup = meetup;
+          }
           return true;
         } else {
           return false;
