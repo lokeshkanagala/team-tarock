@@ -4,20 +4,26 @@ import LocationIcon from "../images/location.svg";
 
 class Map extends Component {
   render() {
-    if (!this.props.latitude || !this.props.longitude || !this.props.link) {
+    if (!this.props.locations) {
       return null;
     }
     return (
       <GoogleMap
         defaultOptions={{ styles: exampleMapStyles }}
-        defaultZoom={15}
-        defaultCenter={{ lat: this.props.latitude, lng: this.props.longitude }}
+        defaultZoom={5}
+        defaultCenter={{ lat: 13.612276, lng: 79.4436423 }}
       >
-        <Marker
-          position={{ lat: this.props.latitude, lng: this.props.longitude }}
-          icon={{ url: LocationIcon }}
-          onClick={() => window.open(this.props.link)}
-        />
+      {
+        this.props.locations && this.props.locations.map((location) => {
+          return (
+            <Marker key={location.latitude}
+              position={{ lat: parseFloat(location.latitude), lng: parseFloat(location.longitude) }}
+              icon={{ url: LocationIcon }}
+              onClick={() => window.open(location.link)}
+            />
+            );
+        })
+      }
       </GoogleMap>
     );
   }

@@ -41,7 +41,7 @@ export const AboutTemplate = () => {
             <img src={about2} alt="Open book"/>
             <h6>We’re an open book</h6>
             <p>
-              We are always available and transparent. Text us (+91-9010570537) anytime if you have a question. We welcome you with open arms and with extreme happiness.
+              We are always available and transparent. Text us (+91-9949087777) anytime if you have a question. We welcome you with open arms and with extreme happiness.
             </p>
             <a href="/analytics">VIEW ALL FINANCIALS</a>
           </div>

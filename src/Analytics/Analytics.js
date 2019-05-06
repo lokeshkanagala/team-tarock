@@ -31,7 +31,7 @@ export const AnalyticsTemplate = ({}) => {
   const MainAnalytics = () => {
     return (
         <div style={{align: 'center'}}>
-        <p style={{margin: '20px'}}><b>This page is updated every 2 weeks (bi-weekly). Last updated on: March 19, 2019</b></p>
+        <p style={{margin: '20px'}}><b>This page is updated every month. Last updated on: March 30, 2019</b></p>
         <p style={{fontStyle: 'italic', fontWeight: '300', margin: '20px'}}> Here, you can view all the financials of our trust. We are always an open book and if you have any queries please feel free to contact us using any of our social media platforms or via our email: <b>teamtaraktrust@gmail.com</b>. The maximum amount of money a person can contribute is 100 INR or 50 USD. However if you are willing to contribute more, you can contribute in the form of direct supplies like food, clothing, etc.</p>
         </div>
       );
