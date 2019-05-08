@@ -2,6 +2,7 @@ import React from "react";
 import headerImageNTR from "../images/headerImageNTR.jpg";
 import Map from "./Map";
 import './Home.scss';
+import Confetti from 'react-confetti';
 
 const renderMeetup = (meetup) => {
   const mapUrl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAnGPiEpydXj18Glw90yONMDzp5XVEW-Ss&v=3.exp&libraries=geometry,drawing,places";
@@ -101,7 +102,7 @@ const renderMeetups = (meetups) => {
   );
 }
 
-const HomePageTemplate = ({homeData, upcomingMeetups}) => {
+const HomePageTemplate = ({homeData, upcomingMeetups, showConfetti}) => {
   if (!homeData || !homeData.home) {
     return <></>;
   }
@@ -112,6 +113,13 @@ const HomePageTemplate = ({homeData, upcomingMeetups}) => {
   return(
     <>
         <section className="header">
+        <div style={{position: "absolute"}}>
+        <Confetti
+          width={window.innerWidth}
+          height={window.innerHeight}
+          numberOfPieces="300"
+          />
+        </div>
         <div className="header-container  container">
           <img className="header-image" src={headerImageNTR} style={{borderRadius: '50%'}}/>
           <h3 className="header-tagline">
@@ -160,17 +168,14 @@ const HomePageTemplate = ({homeData, upcomingMeetups}) => {
     );
 };
 
-class Home extends React.Component {
 
-  render() {
-    const { homeData, meetupsData } = this.props;
-    let upcomingMeetups = meetupsData.meetups && meetupsData.meetups.filter((meetup) => meetup.next === true);
-    return (
-      <div>
-        <HomePageTemplate homeData={homeData} upcomingMeetups={upcomingMeetups}/>
-      </div>
-    );
-  }
+const Home = ({ homeData, meetupsData }) => {
+  let upcomingMeetups = meetupsData.meetups && meetupsData.meetups.filter((meetup) => meetup.next === true);
+  return (
+    <div>
+      <HomePageTemplate homeData={homeData} upcomingMeetups={upcomingMeetups}/>
+    </div>
+  );
 }
 
 
