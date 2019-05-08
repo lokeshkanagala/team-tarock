@@ -210,6 +210,47 @@ const data = {
 			]
 		},
 		{
+			'title': 'Lingala',
+			'next': true,
+			'date': '20/05/2019',
+			'formattedDate': 'May 20, 2019',
+			'location': {
+				'name': 'Sri Muni Leelavathi Nagireddy Old age home, Lingala, Pulivendula, Kadapa',
+				'mapsLink': 'https://www.google.com/maps/place/Lingala,+Andhra+Pradesh,+India/@14.5110794,78.1017854,14z',
+				'latitude':'14.5110794',
+				'longitude':'78.1017854'
+
+			},
+			'phoneNumber': '6301599868 (Venkat)',
+			'presenters': [
+			{
+				'text': 'Fifth of the fifteen events on the occasion of tarak birthday',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': 'Jp santhiniketham blind school, near old ssn degree college, Ongole'
+			}
+			]
+		},
+		{
+			'title': 'Ichapuram Govt Hospital',
+			'next': true,
+			'date': '20/05/2019',
+			'formattedDate': 'May 20, 2019',
+			'location': {
+				'name': 'Ichapuram Government Hospital, Srikakulam District',
+				'mapsLink': 'https://www.google.com/maps/place/Government+Hospital/@19.0993508,84.5516796,11.15z',
+				'latitude':'19.0993508',
+				'longitude':'84.5516796'
+			},
+			'phoneNumber': '+91 9553406976 (San De)',
+			'presenters': [
+			{
+				'text': 'Fifth of the fifteen events on the occasion of tarak birthday',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': 'Jp santhiniketham blind school, near old ssn degree college, Ongole'
+			}
+			]
+		},
+		{
 			'title': 'Maathru Vaatsalya Old Age Home',
 			'next': false,
 			'date': '10/04/2019',
