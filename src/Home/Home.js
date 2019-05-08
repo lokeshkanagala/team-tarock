@@ -3,6 +3,7 @@ import headerImageNTR from "../images/headerImageNTR.jpg";
 import Map from "./Map";
 import './Home.scss';
 import Confetti from 'react-confetti';
+import Wishes from "./Wishes";
 
 const renderMeetup = (meetup) => {
   const mapUrl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAnGPiEpydXj18Glw90yONMDzp5XVEW-Ss&v=3.exp&libraries=geometry,drawing,places";
@@ -138,6 +139,9 @@ const HomePageTemplate = ({homeData, upcomingMeetups, showConfetti}) => {
           </h3>
         </div>
       </section>
+      <div className="header" style={{backgroundColor: "white"}}>
+        <Wishes/>
+      </div>
       <section className="upcomingMeetup  section">
         <div className="upcomingMeetup-container  container">
           <h2 className="upcomingMeetup-title">{'Upcoming Events'}</h2>
