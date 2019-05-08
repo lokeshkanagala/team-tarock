@@ -91,9 +91,9 @@ const data = {
 			'formattedDate': 'May 20, 2019',
 			'location': {
 				'name': 'Amma Nanna Handicapped Foundation, Near Chidambaram Hospital, Jangareddigudem',
-				'mapsLink': 'https://www.google.com/maps/search/Jp+santhiniketham+blind+school+,+Mangamoor+road,+Ongole/@15.5052772,80.0148089',
-				'latitude':'15.5052772',
-				'longitude':'80.0148089'
+				'mapsLink': 'https://www.google.com/maps/place/Jangareddigudem,+Andhra+Pradesh+534447,+India/@17.1226635,81.271367,14z',
+				'latitude':'17.1226635',
+				'longitude':'81.271367'
 
 			},
 			'phoneNumber': '+91 9491722402 (Sai Balusu)',
