@@ -103,7 +103,7 @@ const renderMeetups = (meetups) => {
   );
 }
 
-const HomePageTemplate = ({homeData, upcomingMeetups, showConfetti}) => {
+const HomePageTemplate = ({homeData, upcomingMeetups}) => {
   if (!homeData || !homeData.home) {
     return <></>;
   }
