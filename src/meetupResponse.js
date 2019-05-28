@@ -1,15 +1,38 @@
 const data = {
 	'meetups' : [
 		{
-			'title': 'Navajeevan Vrudha Ashram, Tirupathi',
+			'title': 'Next Event in Rajahmundry: Details will be announced soon',
 			'next': true,
 			'date': '20/05/2019',
 			'formattedDate': 'May 20, 2019',
 			'location': {
-				'name': 'Navajeevan Vrudha Ashram, National Highway, 18A, Tiruchanoor Rd, Tirupati.',
+				'name': 'Next Event in Rajahmundry: Details will be announced soon',
+				'mapsLink': 'https://www.google.com/maps/place/Rajahmundry,+Andhra+Pradesh,+India/@16.9872867,81.7363176',
+				'latitude':'16.9872867',
+				'longitude':'81.7363176',
+				'area': 'Rajahmundry'
+
+			},
+			'phoneNumber': 'TBA',
+			'presenters': [
+			{
+				'text': 'Next Event in Rajahmundry: Details will be announced soon',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': 'Next Event in Rajahmundry: Details will be announced soon'
+			}
+			]
+		},
+		{
+			'title': 'Navajeevan Vrudha Ashram, Tirupathi',
+			'next': false,
+			'date': '20/05/2019',
+			'formattedDate': 'May 20, 2019',
+			'location': {
+				'name': 'Navajeevan Vrudha Ashram, National Highway, 18A, Tiruchanoor Rd.',
 				'mapsLink': 'https://www.google.com/maps/place/Navajeevan+Vrudha+Ashram/@13.612276,79.4436423,17z',
 				'latitude':'13.612276',
-				'longitude':'79.4436423'
+				'longitude':'79.4436423',
+				'area': 'Tirupati'
 
 			},
 			'phoneNumber': '+91 97006 93478 (Goutham)',
@@ -23,14 +46,15 @@ const data = {
 		},
 		{
 			'title': 'Kathikaya old age home(SRESWS) , Ananthapur',
-			'next': true,
+			'next': false,
 			'date': '20/05/2019',
 			'formattedDate': 'May 20, 2019',
 			'location': {
-				'name': 'Kathikaya old age home(SRESWS), Royal nagar,NH 44,hyd-bng highway, Ananthapur',
+				'name': 'Kathikaya old age home(SRESWS), Royal nagar,NH 44',
 				'mapsLink': 'https://www.google.com/maps/search/+Royal+nagar,NH+44,hyd-bng+highway,+ANANTAPUR/@14.6647563,77.5787327',
 				'latitude':'14.6647563',
-				'longitude':'77.5787327'
+				'longitude':'77.5787327',
+				'area': 'Ananthapur'
 
 			},
 			'phoneNumber': '+91 90526 41702 (Bharadwaj)',
@@ -44,14 +68,15 @@ const data = {
 		},
 		{
 			'title': 'Viswa Janani balala ashramam, Thapathopu, Nellore District',
-			'next': true,
+			'next': false,
 			'date': '20/05/2019',
 			'formattedDate': 'May 20, 2019',
 			'location': {
-				'name': 'Viswa Janani balala ashramam, Near railway gate, Thapathopu, Nellore District',
+				'name': 'Viswa Janani balala ashramam, Near railway gate, Thapathopu',
 				'mapsLink': 'https://www.google.com/maps/search/Viswa+Janani+Thapathopu+,Kodavalur+Mandal+Nellore+District/@14.5659314,80.0005531',
 				'latitude':'14.5659314',
-				'longitude':'80.0005531'
+				'longitude':'80.0005531',
+				'area': 'Thapathopu, Nellore Dt'
 
 			},
 			'phoneNumber': '+91 8309253478 (Gowtham)',
@@ -65,14 +90,15 @@ const data = {
 		},
 		{
 			'title': 'Jp santhiniketham blind school, near old ssn degree college, Ongole',
-			'next': true,
+			'next': false,
 			'date': '20/05/2019',
 			'formattedDate': 'May 20, 2019',
 			'location': {
-				'name': 'Jp santhiniketham blind school, Mangamoor road, near old ssn degree college, Ongole',
+				'name': 'Jp santhiniketham blind school, Mangamoor road, old ssn degree college',
 				'mapsLink': 'https://www.google.com/maps/search/Jp+santhiniketham+blind+school+,+Mangamoor+road,+Ongole/@15.5052772,80.0148089',
 				'latitude':'15.5052772',
-				'longitude':'80.0148089'
+				'longitude':'80.0148089',
+				'area': 'Ongole'
 
 			},
 			'phoneNumber': '+91 9581643999 (Naveen Gogineni)',
@@ -86,14 +112,15 @@ const data = {
 		},
 		{
 			'title': 'Amma Nanna Handicaped foundation',
-			'next': true,
+			'next': false,
 			'date': '20/05/2019',
 			'formattedDate': 'May 20, 2019',
 			'location': {
-				'name': 'Amma Nanna Handicapped Foundation, Near Chidambaram Hospital, Jangareddigudem',
+				'name': 'Amma Nanna Handicapped Foundation, Near Chidambaram Hospital',
 				'mapsLink': 'https://www.google.com/maps/place/Jangareddigudem,+Andhra+Pradesh+534447,+India/@17.1226635,81.271367,14z',
 				'latitude':'17.1226635',
-				'longitude':'81.271367'
+				'longitude':'81.271367',
+				'area': 'Jangareddigudem'
 
 			},
 			'phoneNumber': '+91 9491722402 (Sai Balusu)',
@@ -107,14 +134,15 @@ const data = {
 		},
 		{
 			'title': 'Blood donation camp',
-			'next': true,
+			'next': false,
 			'date': '20/05/2019',
 			'formattedDate': 'May 20, 2019',
 			'location': {
-				'name': 'Blood Donation Camp, Janapriya apartments, 3rd phase, Miyapur, Hyderabad',
+				'name': 'Blood Donation Camp, Janapriya apartments, 3rd phase, Miyapur',
 				'mapsLink': 'https://www.google.com/maps/place/Janapriya+Apartments+Miyapur/@17.4907933,78.3558648,17z',
 				'latitude':'17.4907933',
-				'longitude':'78.3558648'
+				'longitude':'78.3558648',
+				'area': 'Hyderabad'
 
 			},
 			'phoneNumber': '+91 8096011770 (Prashanth)',
@@ -128,14 +156,15 @@ const data = {
 		},
 		{
 			'title': 'Papa Homes for girls',
-			'next': true,
+			'next': false,
 			'date': '20/05/2019',
 			'formattedDate': 'May 20, 2019',
 			'location': {
-				'name': 'Papa homes for girls, 50-117-4, Maruti nagar, Seethammadara, Visakhapatnam',
+				'name': 'Papa homes for girls, 50-117-4, Maruti nagar, Seethammadara',
 				'mapsLink': 'https://www.google.com/maps/place/Seethammadara,+Visakhapatnam,+Andhra+Pradesh,+India/@17.7417218,83.3052749,16z',
 				'latitude':'17.7417218',
-				'longitude':'83.3052749'
+				'longitude':'83.3052749',
+				'area': 'Visakhapatnam'
 
 			},
 			'phoneNumber': '+91 9100910011 (Sasank)',
@@ -149,14 +178,15 @@ const data = {
 		},
 		{
 			'title': 'Udayasri mahila samajam',
-			'next': true,
+			'next': false,
 			'date': '20/05/2019',
 			'formattedDate': 'May 20, 2019',
 			'location': {
-				'name': 'Udayasri Mahila Samajam, DNO: 4-11-6, 2nd line, Naidupet, Guntur',
+				'name': 'Udayasri Mahila Samajam, DNO: 4-11-6, 2nd line, Naidupet',
 				'mapsLink': 'https://www.google.com/maps/place/Naidupet,+Guntur,+Andhra+Pradesh,+India/@16.308767,80.4334755',
 				'latitude':'16.308767',
-				'longitude':'80.4334755'
+				'longitude':'80.4334755',
+				'area': 'Guntur'
 			},
 			'phoneNumber': '+91 9885299282 (Vikram Peddi)',
 			'presenters': [
@@ -169,14 +199,15 @@ const data = {
 		},
 		{
 			'title': 'Annai fathima tarak bday',
-			'next': true,
+			'next': false,
 			'date': '20/05/2019',
 			'formattedDate': 'May 20, 2019',
 			'location': {
-				'name': 'Annai Fathima child welfare centre, Sholinganallur, Chennai',
+				'name': 'Annai Fathima child welfare centre, Sholinganallur',
 				'mapsLink': 'https://www.google.com/maps/place/Annai+Fathima+Child+Welfare+Centre/@12.9108014,80.2269135,17z',
 				'latitude':'12.9108014',
-				'longitude':'80.2269135'
+				'longitude':'80.2269135',
+				'area': 'Chennai'
 
 			},
 			'phoneNumber': '+91 9666441040 (Karthik)',
@@ -190,14 +221,15 @@ const data = {
 		},
 		{
 			'title': 'Vasavya Mahila Mandali',
-			'next': true,
+			'next': false,
 			'date': '20/05/2019',
 			'formattedDate': 'May 20, 2019',
 			'location': {
-				'name': 'Vasavya Mahila Mandali, Vasavya nagar, Beside Dr Samaram gari hospital, Benz Circle, Bezawada',
+				'name': 'Vasavya Mahila Mandali, Vasavya nagar, Beside Dr. Samaram gari hospital',
 				'mapsLink': 'https://www.google.com/maps/place/Vasavya+Mahila+Mandali/@16.4980973,80.6530526,17z/',
 				'latitude':'16.4980973',
-				'longitude':'80.6530526'
+				'longitude':'80.6530526',
+				'area': 'Bezawada'
 
 			},
 			'phoneNumber': '+91 9949499686 (Nabbi)',
@@ -211,14 +243,15 @@ const data = {
 		},
 		{
 			'title': 'Lingala',
-			'next': true,
+			'next': false,
 			'date': '20/05/2019',
 			'formattedDate': 'May 20, 2019',
 			'location': {
 				'name': 'Sri Muni Leelavathi Nagireddy Old age home, Lingala, Pulivendula, Kadapa',
 				'mapsLink': 'https://www.google.com/maps/place/Lingala,+Andhra+Pradesh,+India/@14.5110794,78.1017854,14z',
 				'latitude':'14.5110794',
-				'longitude':'78.1017854'
+				'longitude':'78.1017854',
+				'area': 'Lingala'
 
 			},
 			'phoneNumber': '6301599868 (Venkat)',
@@ -232,14 +265,15 @@ const data = {
 		},
 		{
 			'title': 'Ichapuram Govt Hospital',
-			'next': true,
+			'next': false,
 			'date': '20/05/2019',
 			'formattedDate': 'May 20, 2019',
 			'location': {
 				'name': 'Ichapuram Government Hospital, Srikakulam District',
 				'mapsLink': 'https://www.google.com/maps/place/Government+Hospital/@19.0993508,84.5516796,11.15z',
 				'latitude':'19.0993508',
-				'longitude':'84.5516796'
+				'longitude':'84.5516796',
+				'area': 'Ichapuram'
 			},
 			'phoneNumber': '+91 9553406976 (San De)',
 			'presenters': [
@@ -247,6 +281,72 @@ const data = {
 				'text': 'Fifth of the fifteen events on the occasion of tarak birthday',
 				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
 				'presentationTitle': 'Jp santhiniketham blind school, near old ssn degree college, Ongole'
+			}
+			]
+		},
+		{
+			'title': 'Fruits and other necessary items distribution at Govt hospital',
+			'next': false,
+			'date': '20/05/2019',
+			'formattedDate': 'May 20, 2019',
+			'location': {
+				'name': 'Fruits and other necessary items distribution at Government Hospital (10:00 AM)',
+				'mapsLink': 'https://www.google.com/maps/place/Tekkali,+Andhra+Pradesh+532201,+India/@18.601819,84.2144135,14z',
+				'latitude':'18.601819',
+				'longitude':'84.2144135',
+				'area': 'Tekkili'
+
+			},
+			'phoneNumber': '+91 9494895389 (Bhaskar)',
+			'presenters': [
+			{
+				'text': 'First of the fifteen events on the occasion of tarak birthday',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': 'Fruits and other necessary items distribution at Government Hospital, Tekkili (10:00 AM)'
+			}
+			]
+		},
+		{
+			'title': 'Tree plantation and providing food to hearing ability challenged students, Addanki',
+			'next': false,
+			'date': '20/05/2019',
+			'formattedDate': 'May 20, 2019',
+			'location': {
+				'name': 'Tree plantation and providing food to hearing ability challenged students',
+				'mapsLink': 'https://www.google.com/maps/place/Addanki,+Andhra+Pradesh+523201,+India/@15.8120572,79.9636788,15z',
+				'latitude':'15.8120572',
+				'longitude':'79.9636788',
+				'area': 'Addanki'
+
+			},
+			'phoneNumber': '+91 8374404448 (ELIL)',
+			'presenters': [
+			{
+				'text': 'First of the fifteen events on the occasion of tarak birthday',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': 'Navajeevan Vrudha Ashram, Tirupathi'
+			}
+			]
+		},
+		{
+			'title': 'Amma Orphan old age home, Warangal',
+			'next': false,
+			'date': '20/05/2019',
+			'formattedDate': 'May 20, 2019',
+			'location': {
+				'name': 'Amma Orphan old age home',
+				'mapsLink': 'https://www.google.com/maps/place/Warangal,+Telangana,+India/@17.9581482,79.5866775,14z',
+				'latitude':'17.9581482',
+				'longitude':'79.5866775',
+				'area': 'Warangal'
+
+			},
+			'phoneNumber': '+91 9676165902 (Sai Kiran)',
+			'presenters': [
+			{
+				'text': 'First of the fifteen events on the occasion of tarak birthday',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': 'Navajeevan Vrudha Ashram, Tirupathi'
 			}
 			]
 		},

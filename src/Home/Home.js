@@ -2,58 +2,6 @@ import React from "react";
 import headerImageNTR from "../images/headerImageNTR.jpg";
 import Map from "./Map";
 import './Home.scss';
-import Confetti from 'react-confetti';
-import Wishes from "./Wishes";
-
-const renderMeetup = (meetup) => {
-  const mapUrl = "https://maps.googleapis.com/maps/api/js?key=AIzaSyAnGPiEpydXj18Glw90yONMDzp5XVEW-Ss&v=3.exp&libraries=geometry,drawing,places";
-  return (
-    <>
-      <p className="upcomingMeetup-detail  upcomingMeetup-detail--date">
-        <span className="upcomingMeetup-detailLabel">Date: </span>
-        {meetup.formattedDate}
-      </p>
-      <p className="upcomingMeetup-detail  upcomingMeetup-detail--location">
-        <span className="upcomingMeetup-detailLabel">Location: </span>
-        {meetup.location.name}
-      </p>
-      <p className="upcomingMeetup-detail  upcomingMeetup-detail--location">
-        <span className="upcomingMeetup-detailLabel">Contact: </span>
-        {meetup.phoneNumber}
-      </p>
-      {meetup.presenters.length > 0 && (
-        <div className="upcomingMeetup-presenters">
-          {meetup.presenters.map(presenter => (
-            <div className="upcomingMeetup-presenter" key={presenter.text}>
-              <img
-                className="upcomingMeetup-presenterImage"
-                src={presenter.headshot}
-              />
-              <span className="upcomingMeetup-presenterName">{presenter.name}</span>
-              <span className="upcomingMeetup-presenterPresentationTitle">
-                {presenter.presentationTitle}
-              </span>
-              <p className="upcomingMeetup-presenterDescription">{presenter.text}</p>
-            </div>
-          ))}
-        </div>
-      )}
-      <p className="upcomingMeetup-mapNote">{'click cheyandi'}</p>
-      <div className="upcomingMeetup-mapWrapper">
-        <Map
-          isMarkerShown
-          googleMapURL={mapUrl}
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `100%` }} />}
-          mapElement={<div style={{ height: `100%` }} />}
-          link={meetup.location.mapsLink}
-          latitude={meetup.location.latitude}
-          longitude={meetup.location.longitude}
-        />
-      </div>
-    </>
-    );
-}
 
 const generateLocations = (meetups) => {
   let locations = [];
@@ -114,13 +62,6 @@ const HomePageTemplate = ({homeData, upcomingMeetups}) => {
   return(
     <>
         <section className="header">
-        <div style={{position: "absolute"}}>
-        <Confetti
-          width={window.innerWidth}
-          height={window.innerHeight}
-          numberOfPieces="300"
-          />
-        </div>
         <div className="header-container  container">
           <img className="header-image" src={headerImageNTR} style={{borderRadius: '50%'}}/>
           <h3 className="header-tagline">
@@ -139,13 +80,10 @@ const HomePageTemplate = ({homeData, upcomingMeetups}) => {
           </h3>
         </div>
       </section>
-      <div className="header" style={{backgroundColor: "white"}}>
-        <Wishes/>
-      </div>
       <section className="upcomingMeetup  section">
         <div className="upcomingMeetup-container  container">
           <h2 className="upcomingMeetup-title">{'Upcoming Events'}</h2>
-          {upcomingMeetups && upcomingMeetups.length > 1 ? renderMeetups(upcomingMeetups) : <p className="upcomingMeetup-detail">{homeData.home.noMeetups + '     '}😃💪</p>}
+          {upcomingMeetups && upcomingMeetups.length > 0 ? renderMeetups(upcomingMeetups) : <p className="upcomingMeetup-detail">{homeData.home.noMeetups + '     '}😃💪</p>}
         </div>
       </section>
       <section className="ctaBlock">
