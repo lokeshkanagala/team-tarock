@@ -1,12 +1,122 @@
 const data = {
 	'meetups' : [
 		{
-			'title': 'Next Event in Rajahmundry: Details will be announced soon',
+			'title': 'Next charity event will be in Vijayawada',
 			'next': true,
-			'date': '20/05/2019',
-			'formattedDate': 'May 20, 2019',
+			'date': 'TBA',
+			'formattedDate': 'To Be Announced',
 			'location': {
-				'name': 'Next Event in Rajahmundry: Details will be announced soon',
+				'name': 'Next charity event will be in Vijayawada. Details will be announced soon.',
+				'mapsLink': 'https://www.google.com/maps/place/Vijayawada,+Andhra+Pradesh,+India/@16.5103177,80.5744205',
+				'latitude':'16.5103177',
+				'longitude':'80.5744205',
+				'area': 'Vijayawada'
+
+			},
+			'phoneNumber': 'TBA',
+			'presenters': [
+			{
+				'text': 'Next charity event will be in Vijayawada. Details will be announced soon.',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': 'Next charity event will be in Vijayawada. Details will be announced soon.'
+			}
+			]
+		},
+		{
+			'title': '25th Charity event at Papa home for Girls, Visakhapatnam, Andhra Pradesh',
+			'next': false,
+			'date': '22/09/2019',
+			'formattedDate': 'September 22, 2019',
+			'location': {
+				'name': 'Papa home for Girls, Visakhapatnam, Andhra Pradesh',
+				'mapsLink': 'https://www.google.com/maps/place/Rajahmundry,+Andhra+Pradesh,+India/@16.9872867,81.7363176',
+				'latitude':'16.9872867',
+				'longitude':'81.7363176',
+				'area': 'Eluru'
+
+			},
+			'phoneNumber': 'TBA',
+			'presenters': [
+			{
+				'text': 'Donated basic needs and food to girl students at Papa home for girls, Seethammadara, Visakhapatnam, Andhra Pradesh',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': 'Donated basic needs and food to girl students at Papa home for girls, Seethammadara, Visakhapatnam, Andhra Pradesh'
+			}
+			]
+		},
+		{
+			'title': 'Annadhanam on occasion of HariKrishna garu\'s birth anniversary, Chimakurthi, Prakasam Dt',
+			'next': false,
+			'date': '25/08/2019',
+			'formattedDate': 'August 25, 2019',
+			'location': {
+				'name': 'Home for blind women, Eluru, New Postal Colony, Chataparra Road, Eluru',
+				'mapsLink': 'https://www.google.com/maps/place/Rajahmundry,+Andhra+Pradesh,+India/@16.9872867,81.7363176',
+				'latitude':'16.9872867',
+				'longitude':'81.7363176',
+				'area': 'Eluru'
+
+			},
+			'phoneNumber': 'TBA',
+			'presenters': [
+			{
+				'text': 'To honor HariKrishna garu soul we arranged annadhanam in SK Badirula pathasala Chimakurthi, Prakasam Dt',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': 'To honor HariKrishna garu soul we arranged annadhanam in SK Badirula pathasala Chimakurthi, Prakasam Dt'
+			}
+			]
+		},
+		{
+			'title': 'Anurag old age home, Pattabhipuram',
+			'next': false,
+			'date': '25/08/2019',
+			'formattedDate': '',
+			'location': {
+				'name': 'Home for blind women, Eluru, New Postal Colony, Chataparra Road, Eluru',
+				'mapsLink': 'https://www.google.com/maps/place/Rajahmundry,+Andhra+Pradesh,+India/@16.9872867,81.7363176',
+				'latitude':'16.9872867',
+				'longitude':'81.7363176',
+				'area': 'Eluru'
+
+			},
+			'phoneNumber': 'TBA',
+			'presenters': [
+			{
+				'text': '0ur 24th charity event at Anurag old age home in collaboration with Matrix students',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': '0ur 24th charity event at Anurag old age home in collaboration with Matrix students'
+			}
+			]
+		},
+		{
+			'title': 'Home for blind women, Eluru',
+			'next': false,
+			'date': '25/08/2019',
+			'formattedDate': '',
+			'location': {
+				'name': 'Home for blind women, Eluru, New Postal Colony, Chataparra Road, Eluru',
+				'mapsLink': 'https://www.google.com/maps/place/Rajahmundry,+Andhra+Pradesh,+India/@16.9872867,81.7363176',
+				'latitude':'16.9872867',
+				'longitude':'81.7363176',
+				'area': 'Eluru'
+
+			},
+			'phoneNumber': 'TBA',
+			'presenters': [
+			{
+				'text': '0ur 23nd charity event at Home for blind women, Eluru, New Postal Colony, Chataparra Road, Eluru',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': '0ur 23nd charity event at Home for blind women, Eluru, New Postal Colony, Chataparra Road, Eluru'
+			}
+			]
+		},
+		{
+			'title': 'Mother Teresa Charitable Trust, Khammam',
+			'next': false,
+			'date': '25/08/2019',
+			'formattedDate': '',
+			'location': {
+				'name': 'Our 22nd event at ShantiNiketan, Yellandu Road, Khammam',
 				'mapsLink': 'https://www.google.com/maps/place/Rajahmundry,+Andhra+Pradesh,+India/@16.9872867,81.7363176',
 				'latitude':'16.9872867',
 				'longitude':'81.7363176',
@@ -16,9 +126,75 @@ const data = {
 			'phoneNumber': 'TBA',
 			'presenters': [
 			{
-				'text': 'Next Event in Rajahmundry: Details will be announced soon',
+				'text': '0ur 22nd event at ShantiNiketan, Yellandu Road, Khammam',
 				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
-				'presentationTitle': 'Next Event in Rajahmundry: Details will be announced soon'
+				'presentationTitle': '0ur 22nd event at ShantiNiketan, Yellandu Road, Khammam'
+			}
+			]
+		},
+		{
+			'title': 'Charity event to remember HariKrishna Garu and honor his soul, Pragathi Charities',
+			'next': false,
+			'date': '18/08/2019',
+			'formattedDate': '',
+			'location': {
+				'name': 'Pragathi Charities, Jyothi Nagar, Nellore',
+				'mapsLink': 'https://www.google.com/maps/place/Rajahmundry,+Andhra+Pradesh,+India/@16.9872867,81.7363176',
+				'latitude':'16.9872867',
+				'longitude':'81.7363176',
+				'area': 'Rajahmundry'
+
+			},
+			'phoneNumber': 'TBA',
+			'presenters': [
+			{
+				'text': 'Our 21st charity event to rmeember HariKrishna Garu, Pragathi Charities, Jyothi Nagar, Nellore',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': 'Our 21st charity event to rmeember HariKrishna Garu, Pragathi Charities, Jyothi Nagar, Nellore'
+			}
+			]
+		},
+		{
+			'title': 'Food Donation in Flood affected areas, Raichur Dt',
+			'next': false,
+			'date': '08/08/2019',
+			'formattedDate': '',
+			'location': {
+				'name': 'Food Donation in Flood affected areas, Raichur Dt',
+				'mapsLink': 'https://www.google.com/maps/place/Rajahmundry,+Andhra+Pradesh,+India/@16.9872867,81.7363176',
+				'latitude':'16.9872867',
+				'longitude':'81.7363176',
+				'area': 'Rajahmundry'
+
+			},
+			'phoneNumber': 'TBA',
+			'presenters': [
+			{
+				'text': 'Donated food for people affected by flood, Raichur Dt',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': 'Donated food for people affected by flood, Raichur Dt'
+			}
+			]
+		},
+		{
+			'title': 'Gowthami Jeevakarunya Sangham, Rajahmundry',
+			'next': false,
+			'date': '07/07/2019',
+			'formattedDate': '',
+			'location': {
+				'name': 'Gowthami Jeevakarunya Sangham, Godavari Bund Rd, Rajahmundry',
+				'mapsLink': 'https://www.google.com/maps/place/Rajahmundry,+Andhra+Pradesh,+India/@16.9872867,81.7363176',
+				'latitude':'16.9872867',
+				'longitude':'81.7363176',
+				'area': 'Rajahmundry'
+
+			},
+			'phoneNumber': 'TBA',
+			'presenters': [
+			{
+				'text': 'Successfully completed our 19th charity event at Rajahmundry. Distributed bags, raincaps, soaps and other necessary items to kids',
+				'headshot': 'https://s3.ap-south-1.amazonaws.com/teamtaraktrust.com/store/meetupfirst.png',
+				'presentationTitle': 'Successfully completed our 19th charity event at Rajahmundry. Distributed bags, raincaps, soaps and other necessary items to kids'
 			}
 			]
 		},
